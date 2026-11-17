@@ -22,7 +22,7 @@ public class FoodItemsController {
 	@Autowired
 	FooditemsRepo fooditemsRepo;
 
-	@PostMapping
+	@PostMapping("createFoodItems")
 	FoodItems createFoodItems(@RequestBody FoodItems foodItems) {
 		return fooditemsRepo.save(foodItems);
 	}
